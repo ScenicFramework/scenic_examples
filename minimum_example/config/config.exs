@@ -1,12 +1,3 @@
-# This file is responsible for configuring your umbrella
-# and **all applications** and their dependencies with the
-# help of Mix.Config.
-#
-# Note that all applications in your umbrella share the
-# same configuration and dependencies, which is why they
-# all use the same configuration file. If you want different
-# configurations or dependencies per app, it is best to
-# move said applications out of the umbrella.
 use Mix.Config
 
 # Configures Elixir's Logger
@@ -14,14 +5,21 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
-
 # should normally live in config.exs of the device app
 config :scenic, :assets,
-  module: BasicExample.Assets,
-  alias: [
-    parrot: "images/parrot.jpg"
-  ]
+  module: Example.Assets,
+  alias: []
 
-# Import environment specific config. This must remain at the bottom
-# of this file so it overrides the configuration defined above.
-import_config "#{Mix.env()}.exs"
+config :logger, :console, format: "[$level] $message\n"
+
+# Configure the main viewport for the Scenic application
+config :example, :viewport, [
+    name: :main_viewport,
+    size: {800, 600},
+    default_scene: Example.Scene,
+    drivers: [[
+            module: Scenic.Driver.Glfw,
+            name: :glfw_driver,
+            title: "Minimum Example"
+          ]]
+    ]

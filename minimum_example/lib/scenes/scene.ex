@@ -1,4 +1,4 @@
-defmodule BasicExample.Scene.Example do
+defmodule Example.Scene do
   @moduledoc """
   This is a minimal scene with some text.
   """
