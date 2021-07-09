@@ -7,8 +7,11 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 **Fundamentals**:
 * `minimum_example` is a completely stripped-down project that displays a single window with some text and no input.
 * `pubsub` shows how to use `Scenic.PubSub`.
-* `transforms` shows how transforms work in a scene graph.
+
 * `multiple_viewports` shoes how to create an app with multiple viewports.
+
+**Transforms**:
+* `transform_translate` shows how translation transforms work.
 
 **Drawing**:
 * `primitives` shows the drawing primitives available for use with Scenic.
