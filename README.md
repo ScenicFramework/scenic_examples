@@ -7,7 +7,6 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 **Fundamentals**:
 * `minimum_example` is a completely stripped-down project that displays a single window with some text and no input.
 * `pubsub` shows how to use `Scenic.PubSub`.
-
 * `multiple_viewports` shoes how to create an app with multiple viewports.
 
 **Transforms**:
