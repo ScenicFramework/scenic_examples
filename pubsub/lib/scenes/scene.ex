@@ -37,7 +37,7 @@ defmodule Example.Scene do
     IO.inspect( Scenic.PubSub.list(), label: "Source list >>> ")
 
     # For demonstration reasons, we show the most recent value.
-    {:ok, datapoint} = Scenic.PubSub.get(:publisher)
+    datapoint = Scenic.PubSub.get(:publisher)
     IO.inspect( datapoint, label: "Datapoint >>> " )
 
     {vp_width, _} = scene.viewport.size

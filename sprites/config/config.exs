@@ -18,8 +18,8 @@ config :example, :viewport, [
     size: {800, 600},
     default_scene: Example.Scene,
     drivers: [[
-            module: Scenic.Driver.Glfw,
-            name: :glfw_driver,
-            title: "Sprites"
-          ]]
+      module: Scenic.Driver.Local,
+      window: [title: "Sprites", resizeable: true],
+      on_close: :stop_system
+    ]]
     ]

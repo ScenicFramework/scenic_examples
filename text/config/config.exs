@@ -6,13 +6,7 @@ config :logger, :console,
   metadata: [:request_id]
 
 # should normally live in config.exs of the device app
-config :scenic, :assets,
-  module: Example.Assets,
-  alias: [
-    fuggles: "fonts/Fuggles-Regular.ttf",
-    zen_tokyo_zoo: "fonts/ZenTokyoZoo-Regular.ttf"
-  ]
-
+config :scenic, :assets, module: Example.Assets
 
 config :logger, :console, format: "[$level] $message\n"
 
@@ -22,8 +16,8 @@ config :example, :viewport, [
     size: {800, 600},
     default_scene: Example.Scene,
     drivers: [[
-            module: Scenic.Driver.Glfw,
-            name: :glfw_driver,
-            title: "Text"
-          ]]
+      module: Scenic.Driver.Local,
+      window: [title: "Text", resizeable: true],
+      on_close: :stop_system
+    ]]
     ]

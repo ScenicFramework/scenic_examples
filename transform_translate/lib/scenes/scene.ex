@@ -9,8 +9,6 @@ defmodule Example.Scene do
   import Scenic.Primitives
 
   def init(scene, _param, _opts) do
-    {vp_width, _} = scene.viewport.size
-
     # Note that the {0,0} origin is, by default, in the upper-left corner of the screen.
     # Also note that the default pin (origin of traslation) for the rect is its center.
     # Lastly, note that a group's translation will be concatenated (combined) with the translations of things inside it.
@@ -23,7 +21,6 @@ defmodule Example.Scene do
       &(rect( &1, {100,100}, fill: {:color, :purple}, translate: {100, 100} )),
       translate: {100,100}
     )
-
 
     { :ok, push_graph( scene, graph ) }
   end

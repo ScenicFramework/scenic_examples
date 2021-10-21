@@ -46,8 +46,6 @@ defmodule Example.Scene do
   end
 
   def init(scene, _param, _opts) do
-    {vp_width, _} = scene.viewport.size
-
     graph = Graph.build()
             |> demo_line_height(10, @body_offset)
             |> demo_fonts(300, @body_offset)

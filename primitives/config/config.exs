@@ -18,8 +18,8 @@ config :example, :viewport, [
     size: {800, 600},
     default_scene: Example.Scene,
     drivers: [[
-            module: Scenic.Driver.Glfw,
-            name: :glfw_driver,
-            title: "Primitives Example"
-          ]]
-    ]
+      module: Scenic.Driver.Local,
+      window: [title: "Primitives Example", resizeable: true],
+      on_close: :stop_system
+    ]]
+]

@@ -9,8 +9,6 @@ defmodule Example.Scene do
   import Scenic.Primitives
 
   def init(scene, _param, _opts) do
-    {vp_width, _} = scene.viewport.size
-
     # Note that sprites/3 doesn't support styles or transforms, so we do that with group/2
     graph = Graph.build()
             |> sprites( { "sprites/fruit.png", [

@@ -20,10 +20,10 @@ config :example, :viewport, [
     size: {800, 600},
     default_scene: Example.Scene,
     drivers: [[
-            module: Scenic.Driver.Glfw,
-            name: :glfw_driver,
-            title: "Viewport 1"
-          ]]
+      module: Scenic.Driver.Local,
+      window: [title: "Viewport 1", resizeable: true],
+      on_close: :stop_system
+    ]]
     ]
 
 config :example, :viewport2, [
@@ -31,8 +31,8 @@ config :example, :viewport2, [
       size: {800, 600},
       default_scene: Example.Scene2,
       drivers: [[
-              module: Scenic.Driver.Glfw,
-              name: :glfw_driver2,
-              title: "Viewport 2"
-            ]]
+        module: Scenic.Driver.Local,
+        window: [title: "Viewport 2", resizeable: true],
+        on_close: :stop_system
+      ]]
       ]
