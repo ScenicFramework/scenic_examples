@@ -14,14 +14,19 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 
 **Drawing**:
 * `primitives` shows the drawing primitives available for use with Scenic.
+* `text` shows how to use different features of text support.
+* `sprites` shows how to use the asset pipeline to render sprites.
+
+## TODO Projects
+
+**Drawing**:
+
 * `fill_basic` shows how to use basic and gradient fills.
 * `fill_streaming` shows how to use a streaming fill.
 * `fill_image` shows how to use an image fill from the asset pipeline.
 * `stroke_basic` shows how to use basic and gradient strokes.
 * `stroke_streaming` shows how to use a streaming stroke.
 * `stroke_image` shows how to use an image stroke from the asset pipeline.
-* `text` shows how to use different features of text support.
-* `sprites` shows how to use the asset pipeline to render sprites.
 
 **Input**:
 
@@ -40,3 +45,8 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `component_checkbox` shows how to use a checkbox component.
 * `component_toggle` shows how to use a toggle component.
 
+**Transforms**:
+
+* `transform_rotation` shows how rotation transforms work.
+* `transform_pin` shows how pins work.
+* `transform_scale` shows how scale transforms work.
