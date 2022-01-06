@@ -17,6 +17,12 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `text` shows how to use different features of text support.
 * `sprites` shows how to use the asset pipeline to render sprites.
 
+**Input**:
+
+* `input_keyboard` shows how to handle keyboard input.
+* `input_mouse` shows how to handle click input.
+* `input_viewport` shows how to handle viewport input events.
+
 ## TODO Projects
 
 **Drawing**:
@@ -30,8 +36,6 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 
 **Input**:
 
-* `input_keyboard` shows how to handle keyboard input.
-* `input_mouse` shows how to handle click input.
 * `input_mouse_stateful` shows how to implement stateful mouse input (i.e., dragging, other interactions).
 
 **Components**:
