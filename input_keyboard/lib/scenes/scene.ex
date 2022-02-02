@@ -14,7 +14,7 @@ defmodule Example.Scene do
 
   @impl Scenic.Scene
   def handle_input( {:key, {:key_x, 0, _}}, _ctx, scene ) do
-    :ok = release_input(scene, @input_classes)
+    :ok = unrequest_input(scene, @input_classes)
     IO.inspect(:key_x, label: "Cancel input: ")
     {:noreply, scene}
   end
