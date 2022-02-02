@@ -17,7 +17,7 @@ defmodule Example.Scene do
   @impl Scenic.Scene
   def handle_input( {:cursor_button, {:btn_right, 0, _, _}}, _ctx, scene ) do
     IO.inspect(:btn_right, label: "Cancelling Input: ")
-    :ok = release_input(scene)
+    :ok = unrequest_input(scene)
     {:noreply, scene}
   end
 
