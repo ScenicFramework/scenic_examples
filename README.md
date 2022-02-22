@@ -21,6 +21,7 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 
 * `input_keyboard` shows how to handle keyboard input.
 * `input_mouse` shows how to handle click input.
+* `input_mouse_stateful` shows how to implement stateful mouse input (i.e., dragging, other interactions).
 * `input_viewport` shows how to handle viewport input events.
 
 ## TODO Projects
@@ -33,10 +34,6 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `stroke_basic` shows how to use basic and gradient strokes.
 * `stroke_streaming` shows how to use a streaming stroke.
 * `stroke_image` shows how to use an image stroke from the asset pipeline.
-
-**Input**:
-
-* `input_mouse_stateful` shows how to implement stateful mouse input (i.e., dragging, other interactions).
 
 **Components**:
 
