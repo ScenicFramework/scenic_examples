@@ -1,7 +1,3 @@
-A menu bar example based on #16
-
-Requires using: https://github.com/scenic-contrib/scenic-widget-contrib
-
 # Scenic Examples
 
 This repo contains a collection of demonstration projects for the [Scenic](https://github.com/boydm/scenic) framework for Elixir.
