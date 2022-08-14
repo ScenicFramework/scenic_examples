@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -13,13 +13,14 @@ config :scenic, :assets,
 config :logger, :console, format: "[$level] $message\n"
 
 # Configure the main viewport for the Scenic application
-config :example, :viewport, [
-    name: :main_viewport,
-    size: {800, 600},
-    default_scene: Example.Scene,
-    drivers: [[
+config :example, :viewport,
+  name: :main_viewport,
+  size: {800, 600},
+  default_scene: Example.Scene,
+  drivers: [
+    [
       module: Scenic.Driver.Local,
       window: [title: "Keyboard Input", resizeable: true],
       on_close: :stop_system
-    ]]
     ]
+  ]
