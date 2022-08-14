@@ -1,3 +1,7 @@
+A menu bar example based on #16
+
+Requires using: https://github.com/scenic-contrib/scenic-widget-contrib
+
 # Scenic Examples
 
 This repo contains a collection of demonstration projects for the [Scenic](https://github.com/boydm/scenic) framework for Elixir.
@@ -23,6 +27,11 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `input_mouse` shows how to handle click input.
 * `input_mouse_stateful` shows how to implement stateful mouse input (i.e., dragging, other interactions).
 * `input_viewport` shows how to handle viewport input events.
+
+**[Scenic Widget Contrib](https://github.com/scenic-contrib/scenic-widget-contrib)**:
+
+* [`contrib_menu_bar`](./contrib_menu_bar) demos the MenuBar component
+  * ![Contrib MenuBar Screenshot](./contrib_menu_bar/extra/screenshot.png)
 
 ## TODO Projects
 
@@ -51,3 +60,9 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `transform_rotation` shows how rotation transforms work.
 * `transform_pin` shows how pins work.
 * `transform_scale` shows how scale transforms work.
+
+## Contributing
+
+The applications in each example all share the same names (`Example` and `:example) so creating a new example is very easy:
+
+    cp -r minimum_example new_example_name`
