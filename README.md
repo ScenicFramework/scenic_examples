@@ -27,7 +27,7 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 **[Scenic Widget Contrib](https://github.com/scenic-contrib/scenic-widget-contrib)**:
 
 * [`contrib_menu_bar`](./contrib_menu_bar) demos the MenuBar component
-  * ![Contrib MenuBar Screenshot](./contrib_menu_bar/extra/screenshot.png)
+  * <img src="./contrib_menu_bar/extra/screenshot.png" width="150" title="Contrib MenuBar Screenshot">
 
 ## TODO Projects
 
