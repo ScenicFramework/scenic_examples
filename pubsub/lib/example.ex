@@ -9,6 +9,7 @@ defmodule Example do
       {Scenic, [Application.get_env(:example, :viewport)]},
       Example.Publishers.Publisher
     ]
+
     Supervisor.start_link(children, strategy: :one_for_one)
   end
 end
