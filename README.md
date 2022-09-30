@@ -24,6 +24,11 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `input_mouse_stateful` shows how to implement stateful mouse input (i.e., dragging, other interactions).
 * `input_viewport` shows how to handle viewport input events.
 
+**[Scenic Widget Contrib](https://github.com/scenic-contrib/scenic-widget-contrib)**:
+
+* [`contrib_menu_bar`](./contrib_menu_bar) demos the MenuBar component
+  * <img src="./contrib_menu_bar/extra/screenshot.png" width="150" title="Contrib MenuBar Screenshot">
+
 ## TODO Projects
 
 **Drawing**:
@@ -51,3 +56,9 @@ This repo contains a collection of demonstration projects for the [Scenic](https
 * `transform_rotation` shows how rotation transforms work.
 * `transform_pin` shows how pins work.
 * `transform_scale` shows how scale transforms work.
+
+## Contributing
+
+The applications in each example all share the same names (`Example` and `:example) so creating a new example is very easy:
+
+    cp -r minimum_example new_example_name`
