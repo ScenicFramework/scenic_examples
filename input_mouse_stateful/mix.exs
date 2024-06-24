@@ -22,8 +22,8 @@ defmodule Example.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:scenic, "~> 0.11.0-beta.0 "},
-      {:scenic_driver_local, "~> 0.11.0-beta.0 "},
+      {:scenic, git: "https://github.com/ScenicFramework/scenic.git", branch: "main", override: true},
+      {:scenic_driver_local, git: "https://github.com/ScenicFramework/scenic_driver_local.git", branch: "main"},
       {:truetype_metrics, "~> 0.5", runtime: false},
       {:ex_image_info, "~> 0.2.4", runtime: false},
       {:dialyxir, "~> 1.1", only: :dev, runtime: false}
